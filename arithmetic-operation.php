@@ -20,9 +20,15 @@
     }
     
     // ------Find Multiplication--------
-    function Multiplication($getNum1, $getNum2){
+    function multiplication($getNum1, $getNum2){
         $mul = $getNum1 * $getNum2;
         return $mul;
+    }
+    
+    // ------Find Division--------
+    function division($getNum1, $getNum2){
+        $div = $getNum1 / $getNum2;
+        return $div;
     }
     
 
@@ -35,6 +41,8 @@
     echo "Sum = ".$getResult.'<br/>';
     $getResult = subtraction($number1, $number2);
     echo "Subtraction = ".$getResult.'<br/>';
-    $getResult = Multiplication($number1, $number2);
-    echo "Multiplication = ".$getResult;
+    $getResult = multiplication($number1, $number2);
+    echo "Multiplication = ".$getResult.'<br/>';
+    $getResult = division($number1, $number2);
+    echo "Division = ".$getResult;
 ?>
