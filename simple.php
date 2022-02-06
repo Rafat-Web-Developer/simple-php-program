@@ -1,3 +1,4 @@
 <?php
-echo 'This is my first php program';
+$message = 'This is my first php program';
+echo $message;
 ?>
