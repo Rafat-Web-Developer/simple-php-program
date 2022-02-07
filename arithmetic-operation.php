@@ -31,6 +31,17 @@
         return $div;
     }
     
+    // ------Find Remender--------
+    function remender($getNum1, $getNum2){
+        $rem = 0;
+        if($getNum1 > $getNum2){
+            $rem = $getNum1 % $getNum2;
+        }else{
+            $rem = $getNum2 % $getNum1;
+        }
+        return $rem;
+    }
+    
 
 // -------All function are end here------
 
@@ -44,5 +55,7 @@
     $getResult = multiplication($number1, $number2);
     echo "Multiplication = ".$getResult.'<br/>';
     $getResult = division($number1, $number2);
-    echo "Division = ".$getResult;
+    echo "Division = ".$getResult.'<br/>';
+    $getResult = remender($number1, $number2);
+    echo "Remender = ".$getResult;
 ?>
