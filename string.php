@@ -5,6 +5,7 @@
     $reverseString = strrev($string);
     $stringPOS = strpos($string, 'World');
     $stringReplace = str_replace('World', 'Rafat', $string);
+    
     echo "String = ".$string.'<br/>';
     echo "Length = ".$length.'<br/>';
     echo "Total Word = ".$countWord.'<br/>';
